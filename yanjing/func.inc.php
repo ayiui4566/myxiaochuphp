@@ -1,0 +1,62 @@
+<?php
+	/** file: func.inc.php 函数库文件 */
+
+	include "../libs/fileupload.class.php";                            //导入文件上传类FileUpload所在文件
+	include "../libs/image.class.php";                                    //导入图片处理类Image所在的文件
+        require_once("../libs/ThumbHandler.php");
+        require_once("../libs/common.php");                               
+	
+	/* 声明一个函数upload()处理图片上传 */
+	function uploadPic(){
+		$path = "../upload/";                                     //设置图片上传路径
+		
+		$up = new FileUpload($path);                           //创建文件上传类对象
+                $up->set('allowtype',array('gif','jpg','png','swf'));
+		
+		if($up->upload('picPath')) {                               //上传图片
+			$filename = $up->getFileName();                    //获取上传后的图片名
+			//if(is_array($filename)){
+                            $img = new Image($path);                           //创建图像处理类对象
+
+                            $img -> thumb($filename, 150, 150, "");            //将上传的图片都缩放至在300X300以内
+                            //$img -> thumb($filename, 80, 80, "icon_");         //缩放一个80x80的图标，使用icon_作前缀
+                            //$img -> watermark($filename, "logo.gif", 5, "");   //为上传的图片加上图片水印
+
+
+                            //生成30*30的带白边的小图
+                            $t=new ThumbHandler();       
+                            $t->setSrcImg($path.$filename);
+                            $t->setCutType(0);//这一句就OK了
+                            $t->setDstImg($path.'icon_'.$filename);
+                            $t->setDstImgBorder(3,"#ffffff");
+                            $t->createImg(30,30);
+                        //}
+			
+			return array(true, $filename);                     //如果成功返回成功状态和图片名称
+		} else {
+			return array(false, $up->getErrorMsg());           //如果失败返回失败状态和错误消息
+		}
+	}
+        /*上传swf*/
+        function uploadSwf(){
+		$path = "../upload/";                                     //设置图片上传路径
+		
+		$up = new FileUpload($path);                           //创建文件上传类对象
+                $up->set('allowtype',array('gif','jpg','png','swf'));
+		
+		if($up->upload('swfPath')) {                               //上传图片
+			$filename = $up->getFileName();                    //获取上传后的图片名
+			return array(true, $filename);                     //如果成功返回成功状态和图片名称
+		} else {
+			return array(false, $up->getErrorMsg());           //如果失败返回失败状态和错误消息
+		}
+	} 
+	/* 删除上传的图片 */
+	function delpic($picname){
+		$path = "./uploads/"; 
+
+		@unlink($path.$picname);                                //删除原图
+		@unlink($path.'icon_'.$picname);                        //删除图标
+	}
+	
+	

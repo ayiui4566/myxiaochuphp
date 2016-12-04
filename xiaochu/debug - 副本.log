@@ -1,0 +1,122 @@
+[2016-07-09 15:30:53]service启动
+[2016-07-09 15:30:53]玩家：2017 Game.init
+[2016-07-09 15:30:54]sql:select * from u_user where uid=?
+[2016-07-09 15:30:54]sql:update u_user set `uid`="2017",`nick`="name2017",`charge`=0,`chargetime`=0,`gems`=70,`getreward`=1,`gold`=2600,`level`=51,`life`=5,`login`=1468071054,`maxlife`=5,`recover`=0,`register`=1463798954,`xp`=0,`cd`=0,`logincount`=4 where  (`uid`=2017)
+[2016-07-09 15:30:54]sql:select * from c_shop
+[2016-07-09 15:30:54]sql:select * from c_dayreward
+[2016-07-09 15:30:54]sql:select * from c_dresses
+[2016-07-09 15:30:54]sql:select * from c_props
+[2016-07-09 15:30:54]sql:select * from c_tasks_main
+[2016-07-09 15:30:54]sql:select * from d_user_other where uid=?
+[2016-07-09 15:30:54]查询出一条相同的语句：select * from c_tasks_main
+[2016-07-09 15:30:54]sql:select * from c_tasks_main
+[2016-07-09 15:30:54]sql:select * from d_user_mailbox where `to`=:uid
+[2016-07-09 15:30:54]sql:select * from d_user_levelinfo where uid=2017
+[2016-07-09 15:31:00]service启动
+[2016-07-09 15:31:00]玩家：2017 Game.mailbox
+[2016-07-09 15:31:01]sql:select * from d_user_mailbox where `to`=:uid
+[2016-07-09 15:31:02]service启动
+[2016-07-09 15:31:02]玩家：2017 Game.receive
+[2016-07-09 15:31:02]sql:select * from u_user where uid=?
+[2016-07-09 15:31:02]sql:update u_user set `uid`="2017",`nick`="name2017",`charge`=0,`chargetime`=0,`gems`=70,`getreward`=1,`gold`=2600,`level`=51,`life`=5,`login`=1468071054,`maxlife`=5,`recover`=0,`register`=1463798954,`xp`=0,`cd`=0,`logincount`=4 where  (`uid`=2017)
+[2016-07-09 15:31:02]sql:delete from d_user_mailbox  where  (`id`=81) 
+[2016-07-09 15:31:04]service启动
+[2016-07-09 15:31:04]玩家：2017 Game.receive
+[2016-07-09 15:31:04]sql:select * from u_user where uid=?
+[2016-07-09 15:31:04]sql:update u_user set `uid`="2017",`nick`="name2017",`charge`=0,`chargetime`=0,`gems`=70,`getreward`=1,`gold`=2600,`level`=51,`life`=5,`login`=1468071054,`maxlife`=5,`recover`=0,`register`=1463798954,`xp`=0,`cd`=0,`logincount`=4 where  (`uid`=2017)
+[2016-07-09 15:31:04]sql:delete from d_user_mailbox  where  (`id`=76) 
+[2016-07-09 15:31:08]service启动
+[2016-07-09 15:31:08]玩家：2017 Game.level
+[2016-07-09 15:31:17]service启动
+[2016-07-09 15:31:17]玩家：2017 Game.level
+[2016-07-09 15:31:18]service启动
+[2016-07-09 15:31:18]玩家：2017 Game.start
+[2016-07-09 15:31:18]sql:select * from u_user where uid=?
+[2016-07-09 15:31:18]sql:select * from c_props
+[2016-07-09 15:31:29]service启动
+[2016-07-09 15:31:29]玩家：2017 Game.end
+[2016-07-09 15:31:29]sql:select * from u_user where uid=?
+[2016-07-09 15:31:29]sql:update u_user set `uid`="2017",`nick`="name2017",`charge`=0,`chargetime`=0,`gems`=70,`getreward`=1,`gold`=2600,`level`=51,`life`=4,`login`=1468071054,`maxlife`=5,`recover`=0,`register`=1463798954,`xp`=0,`cd`=1468071089,`logincount`=4 where  (`uid`=2017)
+[2016-07-09 15:31:29]sql:select * from u_loseCause where level=?
+[2016-07-09 15:31:29]sql:update u_loseCause set `level`=51,`total`=3,`lose`=2,`loseType`="1|2,3|2,4|2" where  (`level`=51)
+[2016-07-09 15:31:56]service启动
+[2016-07-09 15:31:56]玩家：2017 Game.openBao
+[2016-07-09 15:31:56]sql:select * from d_user_other where uid=?
+[2016-07-09 15:31:56]sql:update d_user_other set `baoxiang`="4|2|4|1,5|2|8|1,3|1|2|700" where  (`uid`=2017)
+[2016-07-09 15:32:00]service启动
+[2016-07-09 15:32:00]玩家：2017 Game.getBao
+[2016-07-09 15:32:00]sql:select * from d_user_other where uid=?
+[2016-07-09 15:32:00]sql:update d_user_other set `baoxiang`="4|2|4|1,5|2|8|1,3|2|2|700" where  (`uid`=2017)
+[2016-07-09 15:32:00]sql:select * from u_user where uid=?
+[2016-07-09 15:32:00]sql:update u_user set `uid`="2017",`nick`="name2017",`charge`=0,`chargetime`=0,`gems`=70,`getreward`=1,`gold`=3300,`level`=51,`life`=4,`login`=1468071054,`maxlife`=5,`recover`=0,`register`=1463798954,`xp`=0,`cd`=1468071089,`logincount`=4 where  (`uid`=2017)
+[2016-07-09 16:18:04]service启动
+[2016-07-09 16:18:04]玩家：2017 Game.init
+[2016-07-09 16:18:05]sql:select * from u_user where uid=?
+[2016-07-09 16:18:05]sql:update u_user set `uid`="2017",`nick`="name2017",`charge`=0,`chargetime`=0,`gems`=70,`getreward`=1,`gold`=3300,`level`=51,`life`=5,`login`=1468073885,`maxlife`=5,`recover`=0,`register`=1463798954,`xp`=0,`cd`=0,`logincount`=4 where  (`uid`=2017)
+[2016-07-09 16:18:05]sql:select * from c_shop
+[2016-07-09 16:18:05]sql:select * from c_dayreward
+[2016-07-09 16:18:05]sql:select * from c_dresses
+[2016-07-09 16:18:05]sql:select * from c_props
+[2016-07-09 16:18:05]sql:select * from c_tasks_main
+[2016-07-09 16:18:05]sql:select * from d_user_other where uid=?
+[2016-07-09 16:18:05]查询出一条相同的语句：select * from c_tasks_main
+[2016-07-09 16:18:05]sql:select * from c_tasks_main
+[2016-07-09 16:18:05]sql:select * from d_user_mailbox where `to`=:uid
+[2016-07-09 16:18:05]sql:select * from d_user_levelinfo where uid=2017
+[2016-07-09 16:18:14]service启动
+[2016-07-09 16:18:14]玩家：2017 Game.level
+[2016-07-09 16:18:18]service启动
+[2016-07-09 16:18:18]玩家：2017 Game.mailbox
+[2016-07-09 16:18:18]sql:select * from d_user_mailbox where `to`=:uid
+[2016-07-09 16:18:24]service启动
+[2016-07-09 16:18:24]玩家：2017 Game.level
+[2016-07-09 16:18:25]service启动
+[2016-07-09 16:18:25]玩家：2017 Game.start
+[2016-07-09 16:18:25]sql:select * from u_user where uid=?
+[2016-07-09 16:18:25]sql:select * from c_props
+[2016-07-09 16:18:33]service启动
+[2016-07-09 16:18:33]玩家：2017 Game.end
+[2016-07-09 16:18:33]sql:select * from u_user where uid=?
+[2016-07-09 16:18:33]sql:update u_user set `uid`="2017",`nick`="name2017",`charge`=0,`chargetime`=0,`gems`=70,`getreward`=1,`gold`=3300,`level`=51,`life`=4,`login`=1468073885,`maxlife`=5,`recover`=0,`register`=1463798954,`xp`=0,`cd`=1468073913,`logincount`=4 where  (`uid`=2017)
+[2016-07-09 16:18:34]sql:select * from u_loseCause where level=?
+[2016-07-09 16:18:34]sql:update u_loseCause set `level`=51,`total`=4,`lose`=3,`loseType`="1|3,3|3,4|3" where  (`level`=51)
+[2016-07-09 16:18:38]service启动
+[2016-07-09 16:18:38]玩家：2017 Game.refill
+[2016-07-09 16:18:38]sql:select * from u_user where uid=?
+[2016-07-09 16:18:38]sql:update u_user set `uid`="2017",`nick`="name2017",`charge`=0,`chargetime`=0,`gems`=55,`getreward`=1,`gold`=3300,`level`=51,`life`=5,`login`=1468073885,`maxlife`=5,`recover`=0,`register`=1463798954,`xp`=0,`cd`=0,`logincount`=4 where  (`uid`=2017)
+[2016-07-09 16:18:45]service启动
+[2016-07-09 16:18:45]玩家：2017 Game.level
+[2016-07-09 16:18:49]service启动
+[2016-07-09 16:18:49]玩家：2017 Game.start
+[2016-07-09 16:18:49]sql:select * from u_user where uid=?
+[2016-07-09 16:18:49]sql:select * from c_props
+[2016-07-09 16:18:54]service启动
+[2016-07-09 16:18:54]玩家：2017 Game.useitem
+[2016-07-09 16:18:54]sql:select * from d_user_other where uid=?
+[2016-07-09 16:18:54]查询出一条相同的语句：select * from d_user_other where uid=?
+[2016-07-09 16:18:54]sql:select * from d_user_other where uid=?
+[2016-07-09 16:18:54]sql:update d_user_other set `bag`="2013|0,2011|0,2017|0,2012|2,2016|3" where  (`uid`=2017)
+[2016-07-09 16:18:57]service启动
+[2016-07-09 16:18:57]玩家：2017 Game.useitem
+[2016-07-09 16:18:57]sql:select * from d_user_other where uid=?
+[2016-07-09 16:18:57]查询出一条相同的语句：select * from d_user_other where uid=?
+[2016-07-09 16:18:57]sql:select * from d_user_other where uid=?
+[2016-07-09 16:18:57]sql:update d_user_other set `bag`="2013|0,2011|0,2017|0,2012|2,2016|2" where  (`uid`=2017)
+[2016-07-09 16:19:01]service启动
+[2016-07-09 16:19:01]玩家：2017 Game.useitem
+[2016-07-09 16:19:01]sql:select * from d_user_other where uid=?
+[2016-07-09 16:19:01]查询出一条相同的语句：select * from d_user_other where uid=?
+[2016-07-09 16:19:01]sql:select * from d_user_other where uid=?
+[2016-07-09 16:19:01]sql:update d_user_other set `bag`="2013|0,2011|0,2017|0,2012|2,2016|1" where  (`uid`=2017)
+[2016-07-09 16:19:06]service启动
+[2016-07-09 16:19:06]玩家：2017 Game.useitem
+[2016-07-09 16:19:06]sql:select * from d_user_other where uid=?
+[2016-07-09 16:19:06]查询出一条相同的语句：select * from d_user_other where uid=?
+[2016-07-09 16:19:06]sql:select * from d_user_other where uid=?
+[2016-07-09 16:19:06]sql:update d_user_other set `bag`="2013|0,2011|0,2017|0,2012|2,2016|0" where  (`uid`=2017)
+[2016-07-09 16:19:12]service启动
+[2016-07-09 16:19:12]玩家：2017 Game.end
+[2016-07-09 16:19:12]sql:select * from u_user where uid=?
+[2016-07-09 16:19:12]sql:update u_user set `uid`="2017",`nick`="name2017",`charge`=0,`chargetime`=0,`gems`=55,`getreward`=1,`gold`=3300,`level`=51,`life`=4,`login`=1468073885,`maxlife`=5,`recover`=0,`register`=1463798954,`xp`=0,`cd`=1468073952,`logincount`=4 where  (`uid`=2017)
+[2016-07-09 16:19:12]sql:select * from u_loseCause where level=?
+[2016-07-09 16:19:12]sql:update u_loseCause set `level`=51,`total`=5,`lose`=4,`loseType`="1|4,3|4,4|4" where  (`level`=51)

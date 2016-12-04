@@ -1,0 +1,179 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--name是在flash中的导出类名,后面的几个参数是九宫格矩形大小 二级节点名可以随便起，里面子节点名一定不能变-->
+<skin>
+	<title><!--面板标题背景图片-->
+		<backgroundImage name="ui_panel_title_bg" x="85" y="10" width="6" height="3"/>
+	</title>
+	<canvas><!--面板内容背景图片-->
+		<backgroundImage name="ui_panel_canvas_noBtn_bg" x="21" y="16" width="130" height="91"/>
+	</canvas>
+	<canvas_btn><!--面板内容背景图片(下面带按钮位置)-->
+		<backgroundImage name="ui_panel_canvas_bg" x="19" y="16" width="130" height="56"/>
+	</canvas_btn>
+	<canvas1><!--面板内容背景图片-->
+		<backgroundImage name="ui_canvas_bg1" x="40" y="40" width="2" height="2"/>
+	</canvas1>
+	<backGroud><!--下拉菜单背景-->
+		<backgroundImage name="ui_canvas_bg" x="6" y="7" width="1" height="1"/>
+	</backGroud>
+	<panel><!--面板组件-->
+		<title link="title"/>
+		<canvas link ="canvas"/>
+		<closeButton link ="closeButton"/>
+	</panel>
+	<alert><!--提示框-->
+		<backgroundImage name="ui_alert_bg" x="42" y="47" width="76" height="20"/>
+		<button link="button"/>
+	</alert>
+	
+	<sceondPanel><!--二级面板-->
+		<title link="sceond_title"/>
+		<canvas link ="second_canvas"/>
+		<closeButton link ="closeButton"/>
+	</sceondPanel>
+	<sceond_title><!--二级面板标题背景图片-->
+		<backgroundImage name="ui_secondPanel_title_bg" x="74" y="10" width="5" height="2"/>
+	</sceond_title>
+	<second_canvas><!--二级面板内容背景图片-->
+		<backgroundImage name="ui_secondPanel_canvas_noBtn_bg" x="54" y="38" width="40" height="22"/>
+	</second_canvas>
+	<second_canvas_btn><!--二级面板内容背景图片(下面带按钮位置)-->
+		<backgroundImage name="ui_sceondPanel_canvas_bg" x="58" y="41" width="33" height="15"/>
+	</second_canvas_btn>
+	<panel_btn><!--一级面板下面带按钮位置-->
+		<title link="title"/>
+		<canvas link ="canvas_btn"/>
+		<closeButton link ="closeButton"/>
+	</panel_btn>
+	<button><!--按钮样式-->
+		<upImage name="ui_button_up" x="4" y="3" width="47" height="9"/><!--普通状态-->
+		<overImage name="ui_button_over" x="4" y="3" width="47" height="9"/><!--鼠标经过状态-->
+		<downImage name="ui_button_down" x="4" y="3" width="47" height="9"/><!--鼠标按下状态-->
+	</button>
+	<smallButton><!--按钮样式-->
+		<upImage name="ui_button_smallButton_up" x="4" y="3" width="47" height="9"/><!--普通状态-->
+		<overImage name="ui_button_smallButton_over" x="4" y="3" width="47" height="9"/><!--鼠标经过状态-->
+		<downImage name="ui_button_smallButton_down" x="4" y="3" width="47" height="9"/><!--鼠标按下状态-->
+	</smallButton>
+	<vScrollBar><!--滚动条组件-->
+		<track link="vscrollBg"/><!--滚动条滑道背景-->
+		<upButton link="upButton"/><!--向上按钮-->
+		<slipButton link="slipButton"/><!--滚动条滑块-->
+		<bottomButton link="bottomButton"/><!--向下按钮-->
+	</vScrollBar>
+	<vScrollBar2><!--滚动条组件-->
+		<track link="vscrollBg2"/><!--滚动条滑道背景-->
+		<upButton link="upButton2"/><!--向上按钮-->
+		<slipButton link="slipButton2"/><!--滚动条滑块-->
+		<bottomButton link="bottomButton2"/><!--向下按钮-->
+	</vScrollBar2>
+	<vScrollBar3><!--滚动条组件-->
+		<track link="vscrollBg"/><!--滚动条滑道背景-->
+		<upButton link="upButton"/><!--向上按钮-->
+		<bottomButton link="bottomButton"/><!--向下按钮-->
+		<slipButton link="slipButton3"/><!--滚动条滑块-->
+	</vScrollBar3>
+	<vscrollBg>
+		<backgroundImage name="ui_vscroll_bg" x="2" y="2" width="11" height="2"/>
+	</vscrollBg>
+	<vscrollBg2>
+		<backgroundImage name="ui_vscroll_bg2" x="11" y="12" width="9" height="428"/>
+	</vscrollBg2>
+	<upButton>
+		<upImage name="ui_vscroll_upBtn_up" x="0" y="0" width="0" height="0"/>
+		<overImage name="ui_vscroll_upBtn_over" x="0" y="0" width="0" height="0"/>
+		<downImage name="ui_vscroll_upBtn_down" x="0" y="0" width="0" height="0"/>
+	</upButton>
+	<slipButton>
+		<upImage name="ui_vscroll_slip_up" x="3" y="6" width="9" height="6"/>
+		<overImage name="ui_vscroll_slip_over" x="3" y="6" width="9" height="6"/>
+		<downImage name="ui_vscroll_slip_down" x="3" y="6" width="9" height="6"/>
+	</slipButton>
+	<bottomButton>
+		<upImage name="ui_vscroll_downBtn_up" x="0" y="0" width="0" height="0"/>
+		<overImage name="ui_vscroll_downBtn_over" x="0" y="0" width="0" height="0"/>
+		<downImage name="ui_vscroll_downBtn_down" x="0" y="0" width="0" height="0"/>
+	</bottomButton>
+	<upButton2>
+		<upImage name="ui_vscroll_upBtn_up2" x="0" y="0" width="0" height="0"/>
+		<overImage name="ui_vscroll_upBtn_over2" x="0" y="0" width="0" height="0"/>
+		<downImage name="ui_vscroll_upBtn_over2" x="0" y="0" width="0" height="0"/>
+	</upButton2>
+	<slipButton2>
+		<upImage name="ui_vscroll_slip_up2" x="6" y="16" width="5" height="60"/>
+		<overImage name="ui_vscroll_slip_over2" x="6" y="16" width="5" height="60"/>
+		<downImage name="ui_vscroll_slip_over2" x="6" y="16" width="5" height="60"/>
+	</slipButton2>
+	<slipButton3>
+		<upImage name="ui_vscroll_slip_up3" x="3" y="5" width="1" height="25"/>
+		<overImage name="ui_vscroll_slip_up3" x="3" y="5" width="1" height="25"/>
+		<downImage name="ui_vscroll_slip_up3" x="3" y="5" width="1" height="25"/>
+	</slipButton3>
+	<bottomButton2>
+		<upImage name="ui_vscroll_downBtn_up2" x="0" y="0" width="0" height="0"/>
+		<overImage name="ui_vscroll_downBtn_over2" x="0" y="0" width="0" height="0"/>
+		<downImage name="ui_vscroll_downBtn_over2" x="0" y="0" width="0" height="0"/>
+	</bottomButton2>
+	<list><!--列表组件-->
+		<tileImage name="ui_list_tile_bg" x="7" y="6" width="2" height="2"/><!--每一行单个背景-->
+		<overImage name="ui_list_over_bg" x="7" y="6" width="2" height="2"/><!--经过状态图片-->
+		<selectImage name="ui_list_select_bg" x="7" y="6" width="2" height="2"/><!--选中状态图片-->
+	</list>
+	<closeButton><!--按钮样式 关闭按钮-->
+		<upImage name="ui_button_close_up" x="0" y="0" width="0" height="0"/><!--普通状态-->
+		<overImage name="ui_button_close_over" x="0" y="0" width="0" height="0"/><!--鼠标经过状态-->
+		<downImage name="ui_button_close_down" x="0" y="0" width="0" height="0"/><!--鼠标按下状态-->
+	</closeButton>
+	<tabBarButton><!--导航按钮-->
+		<upImage name="ui_tabBar_button_up" x="7" y="9" width="33" height="2"/>
+		<overImage name="ui_tabBar_button_over" x="7" y="9" width="33" height="2"/>
+		<downImage name="ui_tabBar_button_down" x="7" y="9" width="33" height="2"/>
+	</tabBarButton>
+	<sumButton><!--按钮样式 +号-->
+		<upImage name="ui_button_sum_up" x="0" y="0" width="0" height="0"/><!--普通状态-->
+		<overImage name="ui_button_sum_over" x="0" y="0" width="0" height="0"/><!--鼠标经过状态-->
+		<downImage name="ui_button_sum_down" x="0" y="0" width="0" height="0"/><!--鼠标按下状态-->
+	</sumButton>
+	<subButton><!--按钮样式 -号-->
+		<upImage name="ui_button_sub_up" x="0" y="0" width="0" height="0"/><!--普通状态-->
+		<overImage name="ui_button_sub_over" x="0" y="0" width="0" height="0"/><!--鼠标经过状态-->
+		<downImage name="ui_button_sub_down" x="0" y="0" width="0" height="0"/><!--鼠标按下状态-->
+	</subButton>
+	<hideButton><!--按钮样式 隐藏按钮-->
+		<upImage name="ui_button_hide_up" x="0" y="0" width="0" height="0"/><!--普通状态-->
+		<overImage name="ui_button_hide_over" x="0" y="0" width="0" height="0"/><!--鼠标经过状态-->
+		<downImage name="ui_button_hide_down" x="0" y="0" width="0" height="0"/><!--鼠标按下状态-->
+	</hideButton>
+	<nextButton><!--按钮样式 下一页按钮-->
+		<upImage name="ui_button_page_next_up" x="0" y="0" width="0" height="0"/><!--普通状态-->
+		<overImage name="ui_button_page_next_over" x="0" y="0" width="0" height="0"/><!--鼠标经过状态-->
+		<downImage name="ui_button_page_next_down" x="0" y="0" width="0" height="0"/><!--鼠标按下状态-->
+	</nextButton>
+	<previousButton><!--按钮样式 上一页按钮-->
+		<upImage name="ui_button_page_previous_up" x="0" y="0" width="0" height="0"/><!--普通状态-->
+		<overImage name="ui_button_page_previous_over" x="0" y="0" width="0" height="0"/><!--鼠标经过状态-->
+		<downImage name="ui_button_page_previous_down" x="0" y="0" width="0" height="0"/><!--鼠标按下状态-->
+	</previousButton>
+	<searchButton><!--按钮样式 查询按钮-->
+		<upImage name="ui_button_search_up" x="0" y="0" width="0" height="0"/><!--普通状态-->
+		<overImage name="ui_button_search_over" x="0" y="0" width="0" height="0"/><!--鼠标经过状态-->
+		<downImage name="ui_button_search_down" x="0" y="0" width="0" height="0"/><!--鼠标按下状态-->
+	</searchButton>
+	<checkBox><!--按钮样式 checkbox按钮-->
+		<selectImage name="ui_checkBox_select" x="0" y="0" width="0" height="0"/><!--选中-->
+		<unSelectImage name="ui_checkBox_unSelect" x="0" y="0" width="0" height="0"/><!--未选中-->
+	</checkBox>
+	<checkBox1><!--按钮样式 checkbox1按钮-->
+		<selectImage name="ui_checkBox1_select" x="0" y="0" width="0" height="0"/><!--选中-->
+		<unSelectImage name="ui_checkBox1_unSelect" x="0" y="0" width="0" height="0"/><!--未选中-->
+	</checkBox1>
+	<toolTip><!--提示框背景-->
+		<backgroundImage name="ui_canvas_bg" x="6" y="7" width="1" height="1"/>
+	</toolTip>
+	
+	<secondButton><!--二级按钮-->
+		<upImage name="ui_button_secondButton_up" x="16" y="9" width="28" height="1"/>
+		<overImage name="ui_button_secondButton_over" x="16" y="9" width="28" height="1"/>
+		<downImage name="ui_button_secondButton_down" x="16" y="10" width="28" height="1"/>
+	</secondButton>
+</skin>

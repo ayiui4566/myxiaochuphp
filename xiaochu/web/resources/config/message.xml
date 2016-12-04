@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<message>
+<share>
+	<id>1</id>
+	<title>{0} 在第 {1} 关得到最高分!</title>
+	<desc>得到第一名的感觉棒极了，跪求一败</desc>
+	<pictureUrl>1.png</pictureUrl>
+</share>
+<share>
+	<id>2</id>
+	<title>{0} 击败了你的分数!</title>
+	<desc>我在第 {0} 关分数超越你了! 坐等挑战?</desc>
+	<pictureUrl>2.png</pictureUrl>
+</share>
+<share>
+	<id>3</id>
+	<title>{0} 超越了你的进度!</title>
+	<desc>我在 {0} 关超越你了的进度了，不服来挑战我啊?</desc>
+	<pictureUrl>3.png</pictureUrl>
+</share>
+<share>
+	<id>4</id>
+	<title>{0} 得到了登陆奖励!</title>
+	<desc>甜品消消每天都会给你惊喜，只要你登陆</desc>
+	<pictureUrl>4.png</pictureUrl>
+</share>
+<share>
+	<id>5</id>
+	<title>{0} 在第 {1} 关创造了新纪录!</title>
+	<desc>{0} 在第 {1} 关创造了更高的分数，你敢来挑战我吗？</desc>
+	<pictureUrl>5.png</pictureUrl>
+</share>
+<share>
+	<id>6</id>
+	<title>{0} 获得了更多星星在第 {1} 关!</title>
+	<desc>这下我得数数我获得了多少颗星星了  </desc>
+	<pictureUrl>6.png</pictureUrl>
+</share>
+<share>
+	<id>7</id>
+	<title>{0} 通过了第 {1} 关!</title>
+	<desc>正准备挑战下一个</desc>
+	<pictureUrl>7.png</pictureUrl>
+</share>
+<sendFriendHeart>啊咧咧，我送了你心哦！打滚求回赠！</sendFriendHeart>
+<sendFriendCoin>啊咧咧，我送了你金币哦！打滚求回赠！</sendFriendCoin>
+<giftBack>谢谢你的心,礼尚往来，我也送你一个</giftBack>
+<asklife>你能给我一颗心吗？ :)</asklife>
+<askBlock>你能帮助解锁地图吗? :)</askBlock>
+<lifeFull>心已经满了</lifeFull>
+<beat1>你超越了 {0}!</beat1>
+<beat2>你超越了 {0} 等 {1} 位好友的分数</beat2>
+<beat3>你超越了 {0} 等 {1} 位好友的分数</beat3>
+<pass1>你超越了 {0}</pass1>
+<pass2>你超越了 {0} 等 {1} 位好友的进度</pass2>
+<pass3>你超越了 {0} 等 {1} 位好友的进度</pass3>
+</message>

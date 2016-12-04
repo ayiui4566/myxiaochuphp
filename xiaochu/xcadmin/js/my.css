@@ -1,0 +1,17 @@
+body {
+}
+.starter-template {
+    padding: 40px 15px;
+    text-align: center;
+}
+.loginPanel{width:256px;margin: 0 auto;margin-top: 100px;}
+.login{width:256px;}
+.login h3{text-align: center;}
+.login .sbtn{margin-left: 70px;}
+
+.webconcent{margin-top: 60px;width: 520px;}
+.span_key{width:74px;}
+.input-group{margin-top: 5px;}
+.input-group .gem_num{width: 100px;}
+.sbtn22,.sbtn23,.sbtn24,.sbtn33,.sbtn_all{margin-top: 5px;margin-left: 40px;}
+.clearBtn{margin-left: 200px;}

@@ -1,0 +1,189 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<style>
+.even {
+	background:#E3C575;
+}
+.odd {
+	background:#D5D500;
+}
+.selected {
+	background:#FF6262;
+	color:#FFFFFF;
+}
+table {
+	border:#666666 1px solid;
+	font-size:12px;
+}
+table .caption {
+	background:#B0B0FF;
+	color:#FFFFFF;
+	test-align:left;
+}
+.even1 {
+	background:#C6FBB9;
+}
+.odd1 {
+	background:#FFB9DC;
+}
+.mselected {
+	background:#F5CEA7;
+	color:#FFFFFF;
+}
+</style>
+<script src="libs/js/jquery-1.4.2.min.js"></script> 
+<script type="text/javascript">
+(function($){
+$.fn.extend({
+"SetTableBgColor":function(options){
+//设置默认样式值
+option=$.extend({
+odd:"odd",//奇数行
+even:"even",//偶数航
+selected:"selected",//选中行
+over:"over"//鼠标移动上去时
+},options);//此处options与function里的参数为同一个对象 
+
+//隔行换色
+$("tbody>tr:even",this).addClass(option.even);
+$("tbody>tr:odd",this).addClass(option.odd);
+
+//单击行变色
+$("tbody>tr",this).click(function(){
+$("tbody>tr").removeClass(option.selected);
+//var hasSelected=$(this).hasClass(option.selected);//返回true或false 查询是否已经包含点击状态下的样式
+$(this).addClass(option.selected);//给选中行添加样式 [hasSelected?"removeClass":"addClass"]根据是否包含移除和添加样式
+});
+//鼠标移动上去变色
+$("tbody>tr",this).mouseover(function(){
+$(this).addClass(option.over);
+});
+//鼠标移出时变回原来的样式
+$("tbody>tr",this).mouseout(function(){
+$(this).removeClass(option.over);
+});
+return this;//返回this，使方法可链 注意 这里必须返回 否则无法直接的调用方法
+}
+});
+})(jQuery);//这个地方（jquery）必须加上，不然会报错
+
+$(function(){
+
+    //按默认类   
+    $("#table2").alterBgColor()
+                .find("th").css("font-size","18");
+
+    //自定义类，给定值；
+    $("#table1").alterBgColor({
+        odd:"odd1",
+        even:"even1",
+        selected:"mselected"
+    }).find("th").css("font-size","18");
+   
+})
+
+</script>
+</head>
+
+<body>
+<table width="394" height="115" border="0" cellpadding="3" cellspacing="1" id="table2">
+  <thead class="caption">
+    <tr id="title">
+      <th>&nbsp;</th>
+      <th height="32">姓名</th>
+      <th>姓别</th>
+      <th>暂住地</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><input name="id" type="checkbox"  value="1" /></td>
+      <td>王锋</td>
+      <td>男</td>
+      <td>北京海淀区肖家河</td>
+    </tr>
+    <tr>
+      <td><input name="id" type="checkbox"  value="2" /></td>
+      <td>王兴</td>
+      <td>女</td>
+      <td>河北石家庄</td>
+    </tr>
+    <tr>
+      <td><input name="id" type="checkbox"  value="3" /></td>
+      <td>李明</td>
+      <td>男</td>
+      <td>北京昌平区回龙观</td>
+    </tr>
+    <tr>
+      <td><input name="id" type="checkbox"  value="4" /></td>
+      <td>程子</td>
+      <td>男</td>
+      <td>北京西城区</td>
+    </tr>
+    <tr>
+      <td><input name="id" type="checkbox"  value="5" /></td>
+      <td>赵垛稳</td>
+      <td>男</td>
+      <td>北京海淀区上地</td>
+    </tr>
+    <tr>
+      <td><input name="id" type="checkbox"  value="6" /></td>
+      <td>陈曦</td>
+      <td>女</td>
+      <td>北京海淀区万泉庄</td>
+    </tr>
+  </tbody>
+</table>
+<table width="394" height="115" border="0" cellpadding="3" cellspacing="1" id="table1">
+  <thead class="caption">
+    <tr id="title">
+      <th>&nbsp;</th>
+      <th height="32">姓名</th>
+      <th>姓别</th>
+      <th>暂住地</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><input name="id" type="checkbox"  value="1" /></td>
+      <td>王锋</td>
+      <td>男</td>
+      <td>北京海淀区肖家河</td>
+    </tr>
+    <tr>
+      <td><input name="id" type="checkbox"  value="2" /></td>
+      <td>王兴</td>
+      <td>女</td>
+      <td>河北石家庄</td>
+    </tr>
+    <tr>
+      <td><input name="id" type="checkbox"  value="3" /></td>
+      <td>李明</td>
+      <td>男</td>
+      <td>北京昌平区回龙观</td>
+    </tr>
+    <tr>
+      <td><input name="id" type="checkbox"  value="4" /></td>
+      <td>程子</td>
+      <td>男</td>
+      <td>北京西城区</td>
+    </tr>
+    <tr>
+      <td><input name="id" type="checkbox"  value="5" /></td>
+      <td>赵垛稳</td>
+      <td>男</td>
+      <td>北京海淀区上地</td>
+    </tr>
+    <tr>
+      <td><input name="id" type="checkbox"  value="6" /></td>
+      <td>陈曦</td>
+      <td>女</td>
+      <td>北京海淀区万泉庄</td>
+    </tr>
+  </tbody>
+</table>
+</body>
+</html>
